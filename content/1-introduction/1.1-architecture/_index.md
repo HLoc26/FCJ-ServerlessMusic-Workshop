@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 1.1. </b> "
 ---
 
-![What you will do](/images/architecture.png)
+{{<figure src="/images/architecture.png" alt="What you will do" width="80%">}}
 
 ### Frontend and User Management
 

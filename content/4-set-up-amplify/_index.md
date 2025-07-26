@@ -8,7 +8,7 @@ pre : " <b> 4. </b> "
 
 In this section, you will deploy the backend of your music app using [AWS Amplify Gen 2](https://docs.amplify.aws/gen2/).
 
-![What you will create: Amplify with Cognito Auth, S3 file bucket, and DynamoDB](/images/4.amplify/what-you-will-do.png)
+{{<figure src="/images/4.amplify/what-you-will-do.png" alt="What you will create: Amplify with Cognito Auth, S3 file bucket, and DynamoDB" width="80%">}}
 
 We already have working backend code ready for authentication, database tables, and file storage. However, in this lab, you will not copy everything. Instead, you will be given partial code and expected to complete the rest.
 

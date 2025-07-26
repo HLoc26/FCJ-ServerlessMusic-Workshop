@@ -9,7 +9,7 @@ pre : " <b> 4.2. </b> "
 
 In this step, you'll configure authentication for your music app using **AWS Amplify Gen 2** and **Amazon Cognito**. We'll create a User Pool, configure registration/login settings, and test the flow manually using the AWS Console.
 
-![What you will do](/images/4.amplify/4.2.cognito-auth/what-you-will-do.png?width=40pc)
+{{<figure src="/images/4.amplify/4.2.cognito-auth/what-you-will-do.png" alt="What you will do" width="80%">}}
 
 ---
 
@@ -99,7 +99,7 @@ This will create a Cognito User Pool and related resources in your AWS account.
 
 Once deployment finishes, go to **AWS Console > Cognito > User Pools** and verify your pool is created. You will see a new User pool with name `amplifyAuthUserPool...`
 
-![Newly created User Pool]()
+{{<figure src="" alt="Newly created User Pool" width="80%">}}
 
 ---
 
@@ -163,7 +163,7 @@ Similarly, uncomment this code to enable user login functionality.
 #### Step 5.1: Check User Pool
 Click on the User pool created by Amplify. On the left side bar, select Users under User Management.
 
-![User list]()
+{{<figure src="" alt="User list" width="80%">}}
 
 #### Step 5.2: Register a New User
 
@@ -173,7 +173,7 @@ Now, go to the web app's [register page](http://localhost:5173/register) and try
 - Preferred username
 - Password
 
-![Resiger form]()
+{{<figure src="" alt="Resiger form" width="80%">}}
 
 And click **Register**. After registration, you will be redirected to the email confirmation page.
 
@@ -187,25 +187,26 @@ You can check the User Pool in the AWS Console to see the new user appears in th
 Now, you need to confirm the user email.
 
 Go to your mailbox and find the confirmation email sent by Cognito. It should look like this:
-![Confirmation email]()
+{{<figure src="" alt="Confirmation email" width="80%">}}
+
 Now, enter the confirmation code in the web app's confirmation page and click **Confirm**.
-![Confirmation form]()
+{{<figure src="" alt="Confirmation form" width="80%">}}
 
 {{% notice tip %}}
 If you don't receive the email, check your spam folder or ensure you entered the correct email address. If you accidentally registered with a wrong email, you can delete the user from the User Pool in the AWS Console and try again.
 {{% /notice %}}
 
 In the AWS Console, you should now see the user status updated to `CONFIRMED`.
-![Confirmed User]()
+{{<figure src="" alt="Confirmed User" width="80%">}}
 
 ---
 
 ### Step 6: Test Login
 
-Now you can use your email and password to log in through the web UI. 
-![Login page]()
+Now you can use your email and password to log in through the web UI.
+{{<figure src="" alt="Login page" width="80%">}}
 After successful login, you will be redirected to the home page, and you should see a welcome message with your preferred username.
-![Home page after login]()
+{{<figure src="" alt="Home page after login" width="80%">}}
 
 ---
 

@@ -24,18 +24,19 @@ If this is the first time you run Amplify in the region (e.g. `us-east-1`), you 
 #### Boostraping a region
 
 You will see a notification if this is the first time you run `npx ampx sandbox` in the region.
-![Amplify notify]()
-
+{{<figure src="" alt="Amplify notify" width="80%">}}
 
 
 Follow the link, click on **Initialize setup now**
-![Boostrap1](/images/4.amplify/4.1.sandbox/bootstrap.png)
+{{<figure src="/images/4.amplify/4.1.sandbox/bootstrap.png" alt="Boostraping a region" width="80%">}}
+
+Then, click on **Create new Amplify app** and select the region you want to use (e.g. `us-east-1`).
 
 Wait until the boostraping process is completed
-![Boostraping -> done]()
+{{<figure src="" alt="Boostraping -> done" width="80%">}}
 
 After the boostraping step is done, go back to the terminal and run `npx ampx sandbox` (if it is not running) to see the Amplify Sandbox is running
-![Amplify Sandbox]()
+{{<figure src="" alt="Amplify Sandbox" width="80%">}}
 
 {{% notice tip %}}
 After amplify have successfully deployed, you will see a newly created file named `amplify_outputs.json` in the root of the project.

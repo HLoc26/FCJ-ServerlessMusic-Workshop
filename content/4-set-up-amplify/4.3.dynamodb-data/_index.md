@@ -179,14 +179,14 @@ This command will deploy your backend changes, including the new DynamoDB tables
 After defining the tables, you can deploy your changes to see them in the AWS Console.
 
 1. Go to the [AWS Management Console](https://aws.amazon.com/console/).
-![Console]()
+    {{<figure src="" alt="AWS Console" width="80%">}}
 2. Navigate to the **DynamoDB** service.
-![Search DynamoDB]()
-![Console DynamoDB]()
+    {{<figure src="" alt="Search DynamoDB" width="80%">}}
+    {{<figure src="" alt="DynamoDB Console" width="80%">}}
 3. On the left sidebar, click on **Tables**.
-![Left side bar > Tables]()
+    {{<figure src="" alt="Left side bar > Tables" width="80%">}}
 4. You should see the tables you defined: `UserTable`, `TrackTable`, `PlaylistTable`, `PlaylistTrackTable`, `FavouriteTable`, and `PlaybackHistoryTable`.
-![New Tables]()
+    {{<figure src="" alt="Newly created tables" width="80%">}}
 
 ### Step 3: Set up IAM Permissions
 

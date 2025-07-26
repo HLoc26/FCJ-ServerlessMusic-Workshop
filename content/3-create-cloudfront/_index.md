@@ -10,7 +10,8 @@ To serve static assets like images, audio files, or frontend builds efficiently 
 
 In this step, we'll configure the S3 bucket and connect it to CloudFront so that your music app's assets can be delivered quickly and reliably, no matter where your users are.
 
-![What you will create: CloudFront and UI web bucket](/images/3.cloudfront/what-you-will-do.png)
+{{<figure src="/images/3.cloudfront/what-you-will-do.png" alt="What you will create: CloudFront and UI web bucket" width="80%">}}
+
 
 {{% notice info %}}
 We'll test everything locally first, so you will not upload the website files yet
