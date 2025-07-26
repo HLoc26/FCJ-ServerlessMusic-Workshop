@@ -29,7 +29,7 @@ You will see a notification if this is the first time you run `npx ampx sandbox`
 
 
 Follow the link, click on **Initialize setup now**
-![Boostrap1](/images/4.amplify/bootstrap.png)
+![Boostrap1](/images/4.amplify/4.1.sandbox/bootstrap.png)
 
 Wait until the boostraping process is completed
 ![Boostraping -> done]()
