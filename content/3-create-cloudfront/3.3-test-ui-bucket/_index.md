@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 3.3. </b> "
 ---
 
-Before wiring up the full frontend, we’ll do a quick sanity check: upload a simple `index.html` file to the S3 UI bucket and make sure it's accessible via CloudFront.
+Before wiring up the full frontend, we'll do a quick sanity check: upload a simple `index.html` file to the S3 UI bucket and make sure it's accessible via CloudFront.
 
 This ensures that:
 
