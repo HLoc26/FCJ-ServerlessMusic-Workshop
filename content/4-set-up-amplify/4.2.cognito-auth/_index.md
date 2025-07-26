@@ -9,9 +9,11 @@ pre : " <b> 4.2. </b> "
 
 In this step, you'll configure authentication for your music app using **AWS Amplify Gen 2** and **Amazon Cognito**. We'll create a User Pool, configure registration/login settings, and test the flow manually using the AWS Console.
 
+![What you will do](/images/4.amplify/4.2.cognito-auth/what-you-will-do.png?width=40pc)
+
 ---
 
-## Step 1: Define Auth Resource
+### Step 1: Define Auth Resource
 
 We've already added a partial `auth.ts` file for you in the Amplify backend at amplify/backend/auth/resource.ts:
 
@@ -43,7 +45,7 @@ You need to check the following configuration:
 
 ---
 
-## Step 2: Connect Auth to Backend
+### Step 2: Connect Auth to Backend
 
 Now that you've defined the `auth` resource in `resource.ts`, you need to connect it to your Amplify backend by importing it in `amplify/backend.ts`.
 
@@ -81,7 +83,7 @@ After saving the file, you're ready to deploy the authentication setup.
 
 ---
 
-## Step 3: Deploy Auth with Amplify
+### Step 3: Deploy Auth with Amplify
 
 Run the following in the root folder:
 
@@ -101,11 +103,11 @@ Once deployment finishes, go to **AWS Console > Cognito > User Pools** and verif
 
 ---
 
-## Step 4: Using Amplify for User Registration and Login in UI
+### Step 4: Using Amplify for User Registration and Login in UI
 
 Now that the User Pool is set up, you can use Amplify's authentication API to handle user registration and login in your web app.
 
-### Step 4.1: Install Amplify Auth Library
+#### Step 4.1: Install Amplify Auth Library
 Run the following command to install the Amplify Auth library:
 
 ```bash
@@ -113,7 +115,7 @@ npm install @aws-amplify/auth
 ```
 This library provides methods to interact with the Cognito User Pool for user registration, login, and management.
 
-### Step 4.2: Configure Amplify Auth in the application
+#### Step 4.2: Configure Amplify Auth in the application
 In the main application file (`src/main.ts`), ensure you have import and configure Amplify Auth:
 
 ```ts
@@ -122,7 +124,7 @@ import outputs from "../amplify_outputs.json";
 Amplify.configure(outputs);
 ```
 
-### Step 4.3: Edit the Register hook
+#### Step 4.3: Edit the Register hook
 In the `src/hooks/useRegister.ts` file, you can use Amplify's Auth API to handle user registration. The existing code already has the necessary logic to register a user with email and preferred username. This hook will be used in the registration form to create a new user in the Cognito User Pool.
 
 In the `useRegister.ts` file, you can see the following code being commented out:
@@ -142,7 +144,7 @@ This code is responsible for registering a new user in the Cognito User Pool. It
 
 Uncomment this code to enable user registration functionality.
 
-### Step 4.4: Edit the Login hook
+#### Step 4.4: Edit the Login hook
 In the `src/hooks/useLogin.ts` file, you can use Amplify's Auth API to handle user login. The existing code already has the necessary logic to log in a user with email and password.
 In the `useLogin.ts` file, you can see the following code being commented out:
 
@@ -156,14 +158,14 @@ This code is responsible for logging in a user using their email and password. I
 
 Similarly, uncomment this code to enable user login functionality.
 
-## Step 5: Test Registration
+### Step 5: Test Registration
 
-### Step 5.1: Check User Pool
-Click on the User pool created by Amplify. On the left panel, select Users under User Management.
+#### Step 5.1: Check User Pool
+Click on the User pool created by Amplify. On the left side bar, select Users under User Management.
 
 ![User list]()
 
-### Step 5.2: Register a New User
+#### Step 5.2: Register a New User
 
 Now, go to the web app's [register page](http://localhost:5173/register) and try registering a new user with:
 
@@ -180,7 +182,7 @@ You can check the User Pool in the AWS Console to see the new user appears in th
 ![Unconfirmed User]()
 {{% /notice %}}
 
-### Step 5.3: Confirm User
+#### Step 5.3: Confirm User
 
 Now, you need to confirm the user email.
 
@@ -198,7 +200,7 @@ In the AWS Console, you should now see the user status updated to `CONFIRMED`.
 
 ---
 
-## Step 6: Test Login
+### Step 6: Test Login
 
 Now you can use your email and password to log in through the web UI. 
 ![Login page]()
