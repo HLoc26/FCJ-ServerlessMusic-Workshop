@@ -7,7 +7,7 @@ pre : " <b> 4.3. </b> "
 ---
 In this step, you'll set up a DynamoDB table to store your music app data using **AWS Amplify Gen 2**. We'll define the table schema, connect it to the backend.
 
-![DynamoDB](/images/4.amplify/4.3.dynamodb-data/what-you-will-do.png?width=40pc)
+{{<figure src="/images/4.amplify/4.3.dynamodb-data/what-you-will-do.png" alt="What you will create: DynamoDB tables" width="80%">}}
 ---
 
 ### Step 1: Define DynamoDB Resource
